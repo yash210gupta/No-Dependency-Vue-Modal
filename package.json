@@ -1,12 +1,25 @@
 {
   "name": "vue-modal-no-dependency",
   "version": "0.1.0",
-  "private": true,
+  "author": {
+    "name": "Yash Gupta",
+    "email": "yash210gupta@gmail.com"
+  },
+  "repository": "https://github.com/yash210gupta/No-Dependency-Vue-Modal.git",
+  "bugs": "https://github.com/yash210gupta/No-Dependency-Vue-Modal/issues",
+  "keywords": ["VueJS", "Modal", "Slots"],
+  "license": "MIT",
+  "private": false,
+  "files": ["dist"],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:npm": "vue-cli-service build --target lib --name modal src/modal.vue",
     "lint": "vue-cli-service lint"
   },
+  "main": "dist/modal.umd.js",
+  "unpkg": "dist/modal.umd.min.js",
+
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
