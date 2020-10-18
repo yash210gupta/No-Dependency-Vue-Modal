@@ -20,7 +20,7 @@
 
 <script>
 import modal from './modal.vue'
-
+ 
 export default {
   name: 'App',
    data: function () {
